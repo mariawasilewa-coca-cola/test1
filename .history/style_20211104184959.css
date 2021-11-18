@@ -1,0 +1,27 @@
+.animation {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    animation-name: change-bg-color;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 3;
+}
+
+@keyframes change-bg-color {
+    0% {
+        background-color: red;
+    }
+
+    30% {
+        background-color: green;
+    }
+
+    50% {
+        background-color: yellow;
+    }
+
+    100% {
+        background-color: black;
+    }
+}

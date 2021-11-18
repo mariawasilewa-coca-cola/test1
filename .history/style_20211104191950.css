@@ -1,0 +1,86 @@
+.animation {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    /* animation-name: change-bg-color;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 3;
+    animation-delay: 2s; */
+
+    animation: change-bg-color 4s forwards 3 2s;
+}
+
+@keyframes change-bg-color {
+    0% {
+        background-color: red;
+    }
+
+    30% {
+        background-color: green;
+    }
+
+    50% {
+        background-color: yellow;
+    }
+
+    100% {
+        background-color: black;
+    }
+}
+
+.loading {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border-top: 10px solid silver;
+    border-left: 10px solid silver;
+    border-right: 10px solid silver;
+    border-bottom: 10px solid black;
+
+    animation: loading .8s infinite linear;
+}
+
+@keyframes loading {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+.loading-dots {
+    text-align: center;
+}
+
+.loading-dots div {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: silver;
+    display: inline-block;
+    margin: 5px;
+}
+
+.loading-dots div:nth-of-type(1) {
+    animation: loading-dots .2s linear;
+}
+
+.loading-dots div:nth-of-type(2) {
+    animation: loading-dots .2s .5s infinite linear;
+}
+
+.loading-dots div:nth-of-type(3) {
+    animation: loading-dots .2s .7s infinite linear;
+}
+
+@keyframes loading-dots {
+    from {
+        background-color: silver;
+    }
+
+    to {
+        background-color: white;
+    }
+}

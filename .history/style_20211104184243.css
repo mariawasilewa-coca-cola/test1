@@ -1,0 +1,23 @@
+.animation {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+@keyframes change-bg-color {
+    0% {
+        background-color: red;
+    }
+
+    30% {
+        background-color: green;
+    }
+
+    50% {
+        background-color: yellow;
+    }
+
+    100% {
+        background-color: black;
+    }
+}
